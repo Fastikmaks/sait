@@ -1,0 +1,986 @@
+/* ============================================
+   КНОПКИ
+   ============================================ */
+.btn {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--color-accent);
+}
+
+.btn--small {
+    padding: 8px 15px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* ============================================
+   КАРТОЧКИ ПРЕДМЕТОВ
+   ============================================ */
+.subject-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.subject-card__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.subject-card__icon {
+    width: 50px;
+    height: 50px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.subject-card__icon img {
+    width: 28px;
+    height: 28px;
+}
+
+.subject-card__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* ============================================
+   ТЕГИ
+   ============================================ */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background: #f0f4f8;
+    color: var(--color-primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* ============================================
+   ИНФОРМАЦИОННЫЕ КАРТОЧКИ (математика / информатика)
+   ============================================ */
+.info-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.info-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-card p {
+    color: var(--color-text-gray);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   КАРТОЧКИ ПРОЕКТОВ
+   ============================================ */
+.project-card {
+    background: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-card__image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card__body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.project-card__desc {
+    font-size: 14px;
+    color: var(--color-text-gray);
+    margin-bottom: 15px;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+/* Карточка-заглушка "Другие проекты" */
+.project-card--empty {
+    border: 2px dashed #b0c4de;
+    background: transparent;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+a.project-card--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    cursor: pointer;
+}
+
+.project-card--empty:hover {
+    background: var(--color-primary-light);
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+.project-card__placeholder {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.project-card__placeholder span {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   КАРТОЧКИ ДОСТИЖЕНИЙ
+   ============================================ */
+.achievement-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-card__icon {
+    margin-bottom: 15px;
+}
+
+.achievement-card__icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.achievement-card__title {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.achievement-list {
+    font-size: 14px;
+    color: var(--color-text-gray);
+    padding-left: 15px;
+    list-style: disc;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.achievement-list li {
+    margin-bottom: 5px;
+}
+
+/* Ссылка-карточка (грамоты, сертификаты, достижения учеников) */
+.achievement-card--link {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 150px;
+    background: var(--color-primary-light);
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.achievement-card--link:hover {
+    background: #dce7f5;
+    transform: translateY(-3px);
+}
+
+.achievement-card__label {
+    color: var(--color-primary);
+}
+
+/* ============================================
+   КАРТОЧКИ ДОКУМЕНТОВ (грамоты, сертификаты)
+   ============================================ */
+.document-card {
+    background: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+}
+
+.document-card__preview {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: var(--color-primary-light);
+}
+
+.document-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.document-card__body {
+    padding: 20px;
+}
+
+.document-card__body h3 {
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.document-card__body p {
+    color: var(--color-text-gray);
+    font-size: 14px;
+}
+
+/* ============================================
+   КОНТАКТЫ (старая версия — блок)
+   ============================================ */
+.contacts-block {
+    display: flex;
+    gap: 40px;
+    background: var(--color-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.contacts-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.contact-item__icon img {
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
+}
+
+.contact-item__text strong {
+    display: block;
+    color: var(--color-primary);
+    margin-bottom: 3px;
+}
+
+.contact-link {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.contacts-map {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contacts-map--full {
+    width: 100%;
+    height: 400px;
+}
+
+.contacts-map--full iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ============================================
+   КОНТАКТЫ (новая версия — карточки)
+   ============================================ */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-color: var(--color-primary);
+}
+
+.contact-card--static {
+    cursor: default;
+}
+
+.contact-card--static:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--color-border);
+}
+
+.contact-card__icon {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary-light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-card__icon img {
+    width: 26px;
+    height: 26px;
+}
+
+.contact-card__body {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.contact-card__body strong {
+    color: var(--color-primary);
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.contact-card__body span {
+    color: var(--color-text-dark);
+    font-size: 15px;
+    word-break: break-word;
+}
+
+/* ============================================
+   ФУТЕР
+   ============================================ */
+.footer {
+    background: #1a2b3c;
+    color: #a0b0c0;
+    padding: 50px 0 20px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.footer__logo-icon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+.footer__logo strong {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.footer__desc {
+    line-height: 1.7;
+    color: #8a9bb0;
+}
+
+.footer__title {
+    color: var(--color-white);
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer__nav li {
+    margin-bottom: 10px;
+}
+
+.footer__nav a {
+    color: #a0b0c0;
+    transition: color 0.3s;
+}
+
+.footer__nav a:hover {
+    color: var(--color-white);
+}
+
+.footer__contacts li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    color: #a0b0c0;
+}
+
+.footer__icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1) opacity(0.7);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.footer__contacts a {
+    color: #a0b0c0;
+    transition: color 0.3s;
+}
+
+.footer__contacts a:hover {
+    color: var(--color-white);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #7a8ba0;
+}
+
+.footer__thanks {
+    color: #a0b0c0;
+}
+
+/* ============================================
+   АКТИВНАЯ ССЫЛКА В МЕНЮ
+   ============================================ */
+.nav__link--active {
+    color: var(--color-primary);
+    font-weight: 600;
+    position: relative;
+}
+
+.nav__link--active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-primary);
+}
+
+/* ============================================
+   КНОПКА "НАЗАД"
+   ============================================ */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.back-link::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a4b8c' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='19' y1='12' x2='5' y2='12'/%3E%3Cpolyline points='12 19 5 12 12 5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: transform 0.25s ease;
+}
+
+.back-link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(26, 75, 140, 0.25);
+}
+
+.back-link:hover::before {
+    transform: translateX(-3px);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='19' y1='12' x2='5' y2='12'/%3E%3Cpolyline points='12 19 5 12 12 5'/%3E%3C/svg%3E");
+}
+
+/* Обёртка для кнопки "Назад" — изолирует отступы */
+.page-nav {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+/* ============================================
+   СТРАНИЦА "СКОРО"
+   ============================================ */
+.soon-block {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    background: var(--color-white);
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.soon-block__icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: var(--color-primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soon-block__icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.soon-block__title {
+    font-size: 26px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.soon-block__text {
+    font-size: 16px;
+    color: var(--color-text-gray);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* ============================================
+   ПОИСК В ШАПКЕ
+   ============================================ */
+.header__search {
+    position: relative;
+}
+
+.search-toggle {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.search-toggle:hover {
+    opacity: 0.7;
+}
+
+.search-box {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 320px;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    padding: 10px;
+    display: none;
+    z-index: 200;
+}
+
+.search-box.active {
+    display: block;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+    color: var(--color-text-dark);
+}
+
+.search-input:focus {
+    border-color: var(--color-primary);
+}
+
+.search-results {
+    margin-top: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-results__item {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--color-text-dark);
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.search-results__item:hover {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.search-results__empty {
+    padding: 12px;
+    font-size: 14px;
+    color: var(--color-text-gray);
+    text-align: center;
+}
+
+/* ============================================
+   СТРАНИЦА "ОБО МНЕ"
+   ============================================ */
+.about-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.about-intro {
+    font-size: 18px;
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ============================================
+   СТРАНИЦА ПРОЕКТА (project-museum.html)
+   ============================================ */
+.project-hero {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: var(--color-primary-light);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.project-meta__item {
+    font-size: 14px;
+    color: var(--color-text-dark);
+}
+
+.project-meta__item strong {
+    color: var(--color-primary);
+}
+
+.project-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.project-list {
+    list-style: disc;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.project-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   АДАПТИВНОСТЬ (для компонентов)
+   ============================================ */
+@media (max-width: 768px) {
+    .contacts-block {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer__contacts li {
+        justify-content: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .search-box {
+        width: 260px;
+        right: -10px;
+    }
+
+    .soon-block {
+        padding: 40px 25px;
+        margin: 30px auto;
+    }
+
+    .soon-block__title {
+        font-size: 22px;
+    }
+}
+
+/* ============================================
+   СТРАНИЦА 404
+   ============================================ */
+.error-block {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    background: var(--color-white);
+    padding: 70px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.error-block__code {
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--color-primary);
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.error-block__title {
+    font-size: 28px;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.error-block__text {
+    font-size: 16px;
+    color: var(--color-text-gray);
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.error-block__actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Вторичная кнопка (контурная) */
+.btn--outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 10px 28px;
+}
+
+.btn--outline:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Тёмная тема для 404 */
+[data-theme="dark"] .error-block {
+    background: #1f2a37;
+}
+
+[data-theme="dark"] .error-block__title {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ
+   ============================================ */
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s, transform 0.3s;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+.theme-toggle__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* По умолчанию (светлая тема) — видно солнце */
+.theme-toggle__icon--moon {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* В тёмной теме — видно луну */
+[data-theme="dark"] .theme-toggle__icon--sun {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}

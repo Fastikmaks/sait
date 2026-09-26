@@ -1,0 +1,19 @@
+:root {
+    /* Цвета */
+    --color-primary: #1a4b8c;
+    --color-primary-light: #eef4fc;
+    --color-accent: #2c6ecb;
+    --color-text-dark: #333333;
+    --color-text-gray: #666666;
+    --color-white: #ffffff;
+    --color-bg-gray: #f9f9f9;
+    --color-border: #e0e0e0;
+
+    /* Типографика */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Отступы */
+    --container-width: 1200px;
+    --gap: 30px;
+    --section-padding: 60px 0;
+}

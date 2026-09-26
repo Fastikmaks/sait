@@ -1,0 +1,461 @@
+/* ============================================
+   ТЁМНАЯ ТЕМА
+   ============================================ */
+[data-theme="dark"] {
+    --color-primary: #6ba3e8;
+    --color-primary-light: #1f2a37;
+    --color-accent: #4a90e2;
+    --color-text-dark: #e0e6ed;
+    --color-text-gray: #9aa8b8;
+    --color-white: #1f2a37;
+    --color-bg-gray: #151c26;
+    --color-border: #2c3e50;
+}
+
+[data-theme="dark"] body {
+    background-color: #151c26;
+    color: #e0e6ed;
+}
+
+/* ============================================
+   ШАПКА
+   ============================================ */
+[data-theme="dark"] .header {
+    background: #1f2a37;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .logo__name {
+    color: #e0e6ed;
+}
+
+[data-theme="dark"] .logo__desc {
+    color: #9aa8b8;
+}
+
+[data-theme="dark"] .nav__list {
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .nav__link {
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .nav__link:hover {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .nav__link--active {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .nav__link--active::after {
+    background: #6ba3e8;
+}
+
+/* ============================================
+   ГЛАВНЫЙ ЭКРАН
+   ============================================ */
+[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, #1a2430 0%, #151c26 100%);
+}
+
+[data-theme="dark"] .hero__title {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .hero__subtitle {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .hero__location {
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .hero__quote {
+    color: #c5d0dc;
+    border-left-color: #6ba3e8;
+}
+
+/* ============================================
+   ЗАГОЛОВКИ СЕКЦИЙ
+   ============================================ */
+[data-theme="dark"] .section__title {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .section__title::after {
+    background: #6ba3e8;
+}
+
+[data-theme="dark"] .section__intro {
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .subsection-title {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   КАРТОЧКИ
+   ============================================ */
+[data-theme="dark"] .subject-card,
+[data-theme="dark"] .info-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .achievement-card,
+[data-theme="dark"] .document-card,
+[data-theme="dark"] .contact-card {
+    background: #1f2a37;
+    border-color: #2c3e50;
+    color: #e0e6ed;
+}
+
+[data-theme="dark"] .subject-card__title,
+[data-theme="dark"] .info-card h3,
+[data-theme="dark"] .project-card__title,
+[data-theme="dark"] .achievement-card__title,
+[data-theme="dark"] .document-card__body h3,
+[data-theme="dark"] .contact-card__body strong {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .info-card p,
+[data-theme="dark"] .project-card__desc,
+[data-theme="dark"] .document-card__body p,
+[data-theme="dark"] .achievement-list,
+[data-theme="dark"] .contact-card__body span {
+    color: #c5d0dc;
+}
+
+/* ============================================
+   ТЕГИ
+   ============================================ */
+[data-theme="dark"] .tag {
+    background: #2c3e50;
+    color: #6ba3e8;
+}
+
+/* ============================================
+   СЕКЦИЯ "СЕРАЯ"
+   ============================================ */
+[data-theme="dark"] .section--gray {
+    background-color: #1a2430;
+}
+
+/* ============================================
+   КОНТАКТЫ
+   ============================================ */
+[data-theme="dark"] .contact-card:hover {
+    border-color: #6ba3e8;
+    box-shadow: 0 6px 20px rgba(107, 163, 232, 0.15);
+}
+
+[data-theme="dark"] .contact-card--static:hover {
+    border-color: #2c3e50;
+    box-shadow: none;
+}
+
+[data-theme="dark"] .contact-link {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   ПОИСК
+   ============================================ */
+[data-theme="dark"] .search-box {
+    background: #1f2a37;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .search-input {
+    background: #151c26;
+    color: #e0e6ed;
+    border-color: #2c3e50;
+}
+
+[data-theme="dark"] .search-input::placeholder {
+    color: #7a8ba0;
+}
+
+[data-theme="dark"] .search-input:focus {
+    border-color: #6ba3e8;
+}
+
+[data-theme="dark"] .search-results__item {
+    color: #e0e6ed;
+}
+
+[data-theme="dark"] .search-results__item:hover {
+    background: #2c3e50;
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .search-results__empty {
+    color: #9aa8b8;
+}
+
+[data-theme="dark"] .search-toggle {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   ДОСТИЖЕНИЯ (ссылки-карточки)
+   ============================================ */
+[data-theme="dark"] .achievement-card--link {
+    background: #1a2430;
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .achievement-card--link:hover {
+    background: #2c3e50;
+}
+
+[data-theme="dark"] .achievement-card__label {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   ПРОЕКТЫ
+   ============================================ */
+[data-theme="dark"] .project-card--empty {
+    border-color: #3a4a5c;
+}
+
+[data-theme="dark"] .project-card--empty:hover {
+    background: #1f2a37;
+}
+
+[data-theme="dark"] .project-card__placeholder {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   СТРАНИЦА ПРОЕКТА
+   ============================================ */
+[data-theme="dark"] .project-meta {
+    background: #1a2430;
+}
+
+[data-theme="dark"] .project-meta__item {
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .project-meta__item strong {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .project-content p {
+    color: #e0e6ed;
+}
+
+[data-theme="dark"] .project-list li {
+    color: #c5d0dc;
+}
+
+/* ============================================
+   ОБО МНЕ
+   ============================================ */
+[data-theme="dark"] .about-intro {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .about-content p {
+    color: #e0e6ed;
+}
+
+/* ============================================
+   КНОПКИ
+   ============================================ */
+[data-theme="dark"] .btn--primary {
+    background: #6ba3e8;
+    color: #1f2a37;
+}
+
+[data-theme="dark"] .btn--primary:hover {
+    background: #4a90e2;
+}
+
+[data-theme="dark"] .btn--outline {
+    background: transparent;
+    color: #6ba3e8;
+    border-color: #6ba3e8;
+}
+
+[data-theme="dark"] .btn--outline:hover {
+    background: #6ba3e8;
+    color: #1f2a37;
+}
+
+/* ============================================
+   КНОПКА "НАЗАД"
+   ============================================ */
+[data-theme="dark"] .back-link {
+    background: #2c3e50;
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .back-link:hover {
+    background: #6ba3e8;
+    color: #1f2a37;
+}
+
+[data-theme="dark"] .back-link::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236ba3e8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='19' y1='12' x2='5' y2='12'/%3E%3Cpolyline points='12 19 5 12 12 5'/%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .back-link:hover::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f2a37' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='19' y1='12' x2='5' y2='12'/%3E%3Cpolyline points='12 19 5 12 12 5'/%3E%3C/svg%3E");
+}
+
+/* ============================================
+   СТРАНИЦА "СКОРО"
+   ============================================ */
+[data-theme="dark"] .soon-block {
+    background: #1f2a37;
+}
+
+[data-theme="dark"] .soon-block__title {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .soon-block__text {
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .soon-block__icon {
+    background: #2c3e50;
+}
+
+/* ============================================
+   СТРАНИЦА 404
+   ============================================ */
+[data-theme="dark"] .error-block {
+    background: #1f2a37;
+}
+
+[data-theme="dark"] .error-block__title {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .error-block__text {
+    color: #c5d0dc;
+}
+
+/* ============================================
+   ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ
+   ============================================ */
+[data-theme="dark"] .theme-toggle {
+    color: #6ba3e8;
+}
+
+/* ============================================
+   ФУТЕР В ТЁМНОЙ ТЕМЕ — ВАРИАНТ A
+   ============================================ */
+[data-theme="dark"] .footer {
+    background: #0f1419;
+    color: #c5d0dc;
+}
+
+[data-theme="dark"] .footer__logo strong {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .footer__desc {
+    color: #b8c5d1;
+}
+
+[data-theme="dark"] .footer__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .footer__nav a {
+    color: #b8c5d1;
+}
+
+[data-theme="dark"] .footer__nav a:hover {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .footer__contacts li {
+    color: #b8c5d1;
+}
+
+[data-theme="dark"] .footer__contacts a {
+    color: #b8c5d1;
+}
+
+[data-theme="dark"] .footer__contacts a:hover {
+    color: #6ba3e8;
+}
+
+[data-theme="dark"] .footer__bottom {
+    color: #9aa8b8;
+}
+
+[data-theme="dark"] .footer__thanks {
+    color: #b8c5d1;
+}
+
+/* ============================================
+   ИКОНКИ ПРЕДМЕТОВ В ТЁМНОЙ ТЕМЕ — ВАРИАНТ A
+   (проблема в фоне CSS, а не в PNG)
+   ============================================ */
+[data-theme="dark"] .subject-card__icon {
+    background: #2c3e50;
+}
+
+[data-theme="dark"] .subject-card__icon img {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .contact-card__icon {
+    background: #2c3e50;
+}
+
+[data-theme="dark"] .contact-card__icon img {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .achievement-card__icon img {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .contact-item__icon img {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .soon-block__icon {
+    background: #2c3e50;
+}
+
+[data-theme="dark"] .soon-block__icon img {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .hero__location-icon {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+[data-theme="dark"] .logo__icon {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(60%) saturate(1500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}
+
+/* Иконки в футере — белые */
+[data-theme="dark"] .footer__icon {
+    filter: brightness(0) invert(1) opacity(0.8);
+}
+
+[data-theme="dark"] .footer__logo-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* ============================================
+   ПЛАВНЫЕ ПЕРЕХОДЫ ПРИ СМЕНЕ ТЕМЫ
+   ============================================ */
+body, .header, .hero, .subject-card, .info-card, .project-card,
+.achievement-card, .document-card, .contact-card, .footer,
+.search-box, .search-input, .soon-block, .error-block,
+.nav__link, .logo__name, .logo__desc, .section__title,
+.hero__title, .hero__quote, .info-card h3, .contact-card__body span {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
