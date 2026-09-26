@@ -984,3 +984,10 @@ a.project-card--empty {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
+
+/* Мобильные элементы скрыты на десктопе */
+.theme-toggle--mobile,
+.nav__search,
+.nav__extra {
+    display: none;
+}
